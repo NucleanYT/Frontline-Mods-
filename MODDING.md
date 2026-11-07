@@ -1,8 +1,8 @@
 # Making Frontline mods
 
-A Frontline mod is a new map: either a **scenario** on today's world (other borders, countries, armies,
-alliances and wars — like the built-in 1914 and 1939 start dates) or a whole **made-up world** with its own
-continents. Players install only the mods they want: in the game, **Mods** (main menu) → *Mod place*, or
+A Frontline mod is either a new map — a **scenario** on today's world (other borders, countries, armies,
+alliances and wars, like the built-in 1914 and 1939 start dates) or a whole **made-up world** with its own
+continents — or a **theme** that changes how the game looks. Players install only the mods they want: in the game, **Mods** (main menu) → *Mod place*, or
 *Add a mod* → a file or a link. Installed mods appear under **New game**.
 
 A mod is **one JSON file** called `<id>.frontline`. It contains only data — no code, no HTML, no SVG.
@@ -31,7 +31,7 @@ Every country you don't mention stays as it is today.
 | `frontline` | always `"mod"` |
 | `format` | always `1` |
 | `id` | 3–40 lower-case letters, digits and dashes, e.g. `"cold-war-1985"`. The file must be called `<id>.frontline`. |
-| `kind` | `"scenario"` or `"world"` |
+| `kind` | `"scenario"`, `"world"` or `"theme"` (from Frontline 3.4.0) |
 | `title`, `tagline`, `description` | shown on the cards (50 / 120 / 600 characters) |
 | `year`, `date` | the start date (`"YYYY-MM-DD"`, years 1–9999) |
 | `version`, `author` | e.g. `"1.2"`; a higher version in the mod place offers an update |
@@ -98,6 +98,64 @@ A world mod adds a `world` object with **GeoJSON FeatureCollections**. Use the s
 country codes, and a state is the easiest way to give a country a flag spec or a real army. A country with no
 flag of its own gets one made for it. Land below 66° is plains unless a region says otherwise, and land above
 66° is tundra.
+
+## Themes (`"kind": "theme"`)
+
+A theme changes colours, fonts, corners, a panel texture and the strategy map's palette. It goes on as soon as
+it's installed, and players switch back in Mods → Installed or Settings → Map. Like the rest of a mod it is only
+data: colours are `"#rrggbb"`, fonts and textures are names from the lists below (the font files ship with the
+game), and numbers are clamped. Leave anything out to keep the game's own value. Set `"minGame": "3.4.0"`.
+
+```json
+{
+  "frontline": "mod", "format": 1, "id": "night-ops", "kind": "theme", "minGame": "3.4.0",
+  "title": "Night Ops", "tagline": "Black and green",
+  "theme": {
+    "colors": { "panel": "#101410", "accent": "#7fbf5a", "text": "#d8f0c8", "primary": ["#4f8a32", "#2f5a1c"] },
+    "fonts": { "titles": "condensed", "text": "sans", "display": "stencil", "mapNames": "condensed" },
+    "caps": true, "corners": "square", "texture": "lines",
+    "map": { "sea": "#16242c", "saturation": 0.5, "borderWidth": 1.5, "borderDark": 0.7 }
+  }
+}
+```
+
+**`colors`**
+
+| Key | What it colours |
+|---|---|
+| `panel`, `raised`, `hover`, `sunken` | side panel; buttons and plates; hover; meters, inputs and the clock |
+| `line`, `edge` | hairlines; the dark outline of every plate |
+| `accent`, `accentHi`, `accentText` | trim, selected tabs, icons; highlights; text on an accent background |
+| `text`, `textDim`, `title` | normal text; secondary text; big titles |
+| `war`, `warHi`, `good`, `info` | war and alarms; their highlight; good news and meters; neutral notes |
+| `glass`, `shade`, `deep` | plates floating over the map; the main menu's shadow; the dark accent behind the main menu button |
+| `sea` | the loading screen |
+| `bar`, `tabs`, `button`, `primary`, `danger`, `loading` | `["#top", "#bottom"]` gradients: the top bar; tabs and dialogs; buttons; main buttons (and switched-on buttons); dangerous buttons; the loading screen around `sea` |
+| `buttonEdge`, `primaryEdge`, `primaryText`, `dangerEdge` | button outlines and the text on main buttons |
+
+**Other settings**
+
+| Key | Values |
+|---|---|
+| `fonts.titles`, `fonts.text`, `fonts.display`, `fonts.mapNames` | `serif`, `sans`, `condensed`, `stencil`, `typewriter` — headings and numbers; everything else; the biggest titles; the country names on the map |
+| `caps` | `true`: headings, tabs and buttons in capitals |
+| `corners` | `round` (the game's), `square`, `soft` |
+| `texture` | a pattern on the panels: `none`, `canvas`, `steel`, `lines`, `grid` |
+
+**`map`**
+
+| Key | Range (default) | What it does |
+|---|---|---|
+| `sea`, `seaPolar` | colours (`#1f3b4d`, `#2d4759`) | the sea near the equator and near the poles |
+| `shallows` | 0–2 (1) | how much lighter the water is along the coasts |
+| `border`, `borderDark`, `borderWidth` | colour (`#000000`), 0–1 (0.5), 0.5–3 (1) | the lines between countries |
+| `front` | colour (`#c80000`) | borders between countries at war |
+| `saturation`, `brightness` | 0–1.5 (0.8), 0.5–1.5 (0.93) | country colours: 0 is grey, 1 their full colour |
+| `tint`, `tintAmount` | colour, 0–0.6 (0) | washes every country colour with one colour |
+| `relief`, `grain`, `edgeShadow` | 0–2 (1), 0–2 (1), 0–3 (1) | hill shading; the painted grain; the soft shadow inside borders and coasts |
+| `paper` | 0–1 (0) | an old-paper wash over the whole map |
+| `vignette` | 0–1 (0.45) | the dark frame around the map |
+| `names`, `namesEdge`, `namesAlpha` | colours, 0.2–1.4 (1) | the big country names on the map |
 
 ## Limits
 

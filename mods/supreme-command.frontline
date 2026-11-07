@@ -1,0 +1,94 @@
+{
+ "frontline": "mod",
+ "format": 1,
+ "id": "supreme-command",
+ "kind": "theme",
+ "title": "Supreme Command",
+ "version": "1.0",
+ "author": "Frontline",
+ "minGame": "3.4.0",
+ "tagline": "A dark WWII grand-strategy war room",
+ "description": "Charcoal steel panels with square frames and gold trim, condensed capitals and stencil titles, green command buttons, and a muted, painted strategy map: earthy country colours over strong terrain relief, heavy dark borders, a slate sea and an old-paper wash.",
+ "theme": {
+  "colors": {
+   "panel": "#1b1e1d",
+   "raised": "#282c2a",
+   "hover": "#353a37",
+   "sunken": "#0f1110",
+   "line": "#3d4340",
+   "accent": "#c4a45a",
+   "accentHi": "#e6cd8c",
+   "accentText": "#1b1408",
+   "text": "#e6e0cc",
+   "textDim": "#9d9a8c",
+   "title": "#f0e7c8",
+   "war": "#a3352a",
+   "warHi": "#da6550",
+   "good": "#86ad5c",
+   "info": "#8aabbd",
+   "edge": "#050606",
+   "glass": "#191c1b",
+   "shade": "#060707",
+   "deep": "#3f4a26",
+   "sea": "#26394a",
+   "bar": [
+    "#323734",
+    "#141716"
+   ],
+   "tabs": [
+    "#272b29",
+    "#1a1d1c"
+   ],
+   "button": [
+    "#3a403c",
+    "#252927"
+   ],
+   "buttonEdge": "#59605a",
+   "primary": [
+    "#62803f",
+    "#3d5326"
+   ],
+   "primaryEdge": "#8fb062",
+   "primaryText": "#f3efda",
+   "danger": [
+    "#a03526",
+    "#6c1f16"
+   ],
+   "dangerEdge": "#c85b47",
+   "loading": [
+    "#30475a",
+    "#0e171e"
+   ]
+  },
+  "fonts": {
+   "titles": "condensed",
+   "text": "sans",
+   "display": "stencil",
+   "mapNames": "condensed"
+  },
+  "caps": true,
+  "corners": "square",
+  "texture": "steel",
+  "map": {
+   "sea": "#2a3d4b",
+   "seaPolar": "#3b4e5b",
+   "shallows": 1.5,
+   "border": "#120f0a",
+   "borderWidth": 1.6,
+   "borderDark": 0.66,
+   "front": "#b31d10",
+   "saturation": 0.55,
+   "brightness": 0.8,
+   "tint": "#857552",
+   "tintAmount": 0.22,
+   "relief": 1.35,
+   "grain": 1.4,
+   "edgeShadow": 1.7,
+   "paper": 0.35,
+   "vignette": 0.62,
+   "names": "#f4eed8",
+   "namesEdge": "#17120a",
+   "namesAlpha": 1.15
+  }
+ }
+}

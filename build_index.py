@@ -17,7 +17,7 @@ for name in sorted(os.listdir(os.path.join(repo, "mods"))):
     assert name == d["id"] + ".frontline", f"{name}: the file must be called {d['id']}.frontline"
     mods.append({k: d[k] for k in ("id", "kind", "title", "version", "author", "tagline", "description", "year", "minGame") if k in d}
                 | {"file": "mods/" + name, "size": os.path.getsize(p)})
-mods.sort(key=lambda m: (m["kind"] != "scenario", m["year"]))
+mods.sort(key=lambda m: ({"scenario": 0, "world": 1, "theme": 2}.get(m["kind"], 3), m.get("year", 0), m["title"]))
 with open(os.path.join(repo, "index.json"), "w", encoding="utf-8") as f:
     json.dump({"frontline": "mods", "format": 1, "mods": mods}, f, ensure_ascii=False, indent=1)
 print(len(mods), "mods:", ", ".join(m["title"] for m in mods))
