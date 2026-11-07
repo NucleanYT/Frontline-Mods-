@@ -44,7 +44,7 @@ Every country you don't mention stays as it is today.
 | `names` | old city names, e.g. `{ "Saint Petersburg": "Leningrad" }` |
 | `alliances` | `[{ "name": "Warsaw Pact", "color": "#be2828", "members": ["SOV", "POL"] }]` |
 | `relations` | `[["SOV", "USA", -60], …]` from −100 (hatred) to 100 (friendship) |
-| `wars` | wars already going: `[{ "a": "IRQ", "b": "IRN", "name": "Iran–Iraq War", "join": [["AFG", 0]] }]` — `0` joins side a, `1` side b |
+| `wars` | wars already going: `[{ "a": "IRQ", "b": "IRN", "name": "Iran–Iraq War", "join": [["AFG", 0]] }]` — `0` joins side a, `1` side b. Add `"kind": "independence"` when side a fights to be free of side b: if a holds out, b may recognize it (from Frontline 3.3.5) |
 | `occupied` | `[{ "by": "ISR", "from": "PSX", "poly": [[lon, lat], …] }]` — land held by another country at the start |
 | `forts` | `[["DDR", "DEU", 2, "Inner German Border"]]` — fortified line: owner, facing, depth 1–6 cells, name |
 | `hesitant` | allies that wait before joining a war, e.g. `["ITA"]` |
