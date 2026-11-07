@@ -14,7 +14,7 @@ installed with one click. Nobody gets a mod they didn't pick.
 | Cold War 1985 | scenario | NATO against the Warsaw Pact; Afghanistan, Iran–Iraq and Angola at war |
 | Empires Reborn | scenario | an alternate 2031: the Ottomans, Byzantium, Austria-Hungary, Persia, the Inca … are back |
 | The Shattered Isles | made-up world | 60 nations on a new planet of ragged continents and islands |
-| Supreme Command | theme (Frontline 3.4.0+) | a dark WWII grand-strategy war room: square steel panels, stencil titles, a muted painted map with heavy borders |
+| Supreme Command | theme (Frontline 3.4.1+) | a WWII grand-strategy look: steel panels and stencil titles; country colours glowing along their borders over mottled terrain, province and sea-zone lines, clouds, a navy sea and star capitals |
 
 ## Adding a mod
 

@@ -110,13 +110,13 @@
    "id": "supreme-command",
    "kind": "theme",
    "title": "Supreme Command",
-   "version": "1.0",
+   "version": "1.1",
    "author": "Frontline",
    "tagline": "A dark WWII grand-strategy war room",
-   "description": "Charcoal steel panels with square frames and gold trim, condensed capitals and stencil titles, green command buttons, and a muted, painted strategy map: earthy country colours over strong terrain relief, heavy dark borders, a slate sea and an old-paper wash.",
-   "minGame": "3.4.0",
+   "description": "Charcoal steel panels with square frames and gold trim, condensed capitals and stencil titles, green command buttons, and a WWII grand-strategy map: flat country colours that glow along their borders over mottled terrain, province and sea-zone lines, clouds, a dark navy sea, big spread-out names and star capitals.",
+   "minGame": "3.4.1",
    "file": "mods/supreme-command.frontline",
-   "size": 2021
+   "size": 2273
   }
  ]
 }

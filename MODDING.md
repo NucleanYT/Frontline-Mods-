@@ -102,9 +102,10 @@ flag of its own gets one made for it. Land below 66° is plains unless a region 
 ## Themes (`"kind": "theme"`)
 
 A theme changes colours, fonts, corners, a panel texture and the strategy map's palette. It goes on as soon as
-it's installed, and players switch back in Mods → Installed or Settings → Map. Like the rest of a mod it is only
+it's installed, and players switch back in Mods → Installed or Settings → Map. In Settings → Mods players can
+change the `map` numbers below for themselves (the mod file stays as it is). Like the rest of a mod it is only
 data: colours are `"#rrggbb"`, fonts and textures are names from the lists below (the font files ship with the
-game), and numbers are clamped. Leave anything out to keep the game's own value. Set `"minGame": "3.4.0"`.
+game), and numbers are clamped. Leave anything out to keep the game's own value. Set `"minGame": "3.4.0"` (or `"3.4.1"` if you use the `geometric` font or the map settings marked 3.4.1).
 
 ```json
 {
@@ -137,7 +138,7 @@ game), and numbers are clamped. Leave anything out to keep the game's own value.
 
 | Key | Values |
 |---|---|
-| `fonts.titles`, `fonts.text`, `fonts.display`, `fonts.mapNames` | `serif`, `sans`, `condensed`, `stencil`, `typewriter` — headings and numbers; everything else; the biggest titles; the country names on the map |
+| `fonts.titles`, `fonts.text`, `fonts.display`, `fonts.mapNames` | `serif`, `sans`, `condensed`, `stencil`, `typewriter`, `geometric` (3.4.1) — headings and numbers; everything else; the biggest titles; the country names on the map |
 | `caps` | `true`: headings, tabs and buttons in capitals |
 | `corners` | `round` (the game's), `square`, `soft` |
 | `texture` | a pattern on the panels: `none`, `canvas`, `steel`, `lines`, `grid` |
@@ -156,6 +157,12 @@ game), and numbers are clamped. Leave anything out to keep the game's own value.
 | `paper` | 0–1 (0) | an old-paper wash over the whole map |
 | `vignette` | 0–1 (0.45) | the dark frame around the map |
 | `names`, `namesEdge`, `namesAlpha` | colours, 0.2–1.4 (1) | the big country names on the map |
+| `namesAuto` (3.4.1) | 0 or 1 (0) | 1: names in the `namesEdge` colour, edged with `names`, on light countries |
+| `edgeGlow` (3.4.1) | 0–1.5 (0) | each country's colour strong along its land borders and washed out inside |
+| `mottle` (3.4.1) | 0–2 (0) | a blotchy satellite-like texture over the land |
+| `landLines`, `seaLines` (3.4.1) | 0–1 (0) | thin province-like lines over the land; sea-zone lines over the water (when zoomed in far enough) |
+| `clouds` (3.4.1) | 0–1 (0) | clouds over the map when zoomed out |
+| `capital`, `capitalEdge`, `capitalPicked`, `capitalSize` (3.4.1) | colours (`#f6d27a`, `#1d2118`, same as `capital`), 0.6–2.2 (1) | the capital stars; the selected country's star; their size |
 
 ## Limits
 
