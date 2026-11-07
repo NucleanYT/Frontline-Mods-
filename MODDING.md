@@ -107,7 +107,7 @@ flag of its own gets one made for it. Land below 66° is plains unless a region 
 
 ## Publishing to the mod place
 
-The mod place reads `index.json` from the Frontline mod repository on GitHub. Make that file with
+The mod place reads `index.json` from the [Frontline-Mods-](https://github.com/NucleanYT/Frontline-Mods-) repository on GitHub. Make that file with
 `python3 tools/mods/build_index.py <repo>`, which lists every `mods/*.frontline`. To share a mod outside the
 list:
 - send the `.frontline` file; players pick it in *Add a mod*, or drop it on the window on PC
