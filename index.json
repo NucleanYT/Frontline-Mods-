@@ -1,0 +1,45 @@
+{
+ "frontline": "mods",
+ "format": 1,
+ "mods": [
+  {
+   "id": "cold-war-1985",
+   "kind": "scenario",
+   "title": "Cold War 1985",
+   "version": "1.0",
+   "author": "Frontline",
+   "tagline": "11 March 1985 · Gorbachev takes power in Moscow",
+   "description": "The height of the Cold War: NATO against the Warsaw Pact across a divided Germany, the Soviet Union bogged down in Afghanistan, Iran and Iraq locked in a bloody war, and civil war in Angola. One spark could turn it hot.",
+   "year": 1985,
+   "minGame": "3.3.0",
+   "file": "mods/cold-war-1985.frontline",
+   "size": 9614
+  },
+  {
+   "id": "empires-reborn",
+   "kind": "scenario",
+   "title": "Empires Reborn",
+   "version": "1.0",
+   "author": "Frontline",
+   "tagline": "1 January 2031 · The old empires are back",
+   "description": "An alternate 2031 where the great empires of history have returned on today's map — the Ottomans and Byzantium face off over the Aegean, Austria-Hungary and the Holy Roman Empire rule central Europe, a Russian Empire stretches to the Pacific, and Persia, Mali, the Inca and Gran Colombia rise again.",
+   "year": 2031,
+   "minGame": "3.3.0",
+   "file": "mods/empires-reborn.frontline",
+   "size": 4902
+  },
+  {
+   "id": "shattered-isles",
+   "kind": "world",
+   "title": "The Shattered Isles",
+   "version": "1.0",
+   "author": "Frontline",
+   "tagline": "A made-up world of 60 nations",
+   "description": "A whole new planet of ragged continents and countless islands: 60 nations from the vast Federation of Kingland to tiny island realms, two rival blocs — the Northern Compact and the Sunward League — and a border war already burning. Nothing here is on any map of Earth.",
+   "year": 1000,
+   "minGame": "3.3.0",
+   "file": "mods/shattered-isles.frontline",
+   "size": 421599
+  }
+ ]
+}
