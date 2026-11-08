@@ -24,3 +24,11 @@ installed with one click. Nobody gets a mod they didn't pick.
 3. Commit both.
 
 The generators for the mods above are in the game's source (`tools/mods/`).
+
+## The Android app
+
+`android/` holds the newest Frontline APK, and `game.json` (copied into `index.json`) says which version it is.
+From 3.4.2 the app checks this a few seconds after it starts: when a newer version is out, the main menu's
+**Update** button downloads it through the phone's browser, and Android installs it over the old one (saves,
+settings and mods stay). To publish a new one: put `Frontline-X.Y.Z.apk` in `android/`, update `game.json`,
+run `python3 build_index.py .`

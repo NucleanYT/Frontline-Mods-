@@ -18,6 +18,14 @@ for name in sorted(os.listdir(os.path.join(repo, "mods"))):
     mods.append({k: d[k] for k in ("id", "kind", "title", "version", "author", "tagline", "description", "year", "minGame") if k in d}
                 | {"file": "mods/" + name, "size": os.path.getsize(p)})
 mods.sort(key=lambda m: ({"scenario": 0, "world": 1, "theme": 2}.get(m["kind"], 3), m.get("year", 0), m["title"]))
+out = {"frontline": "mods", "format": 1, "mods": mods}
+# game.json (optional): the newest Android app, for its Update button — {"version", "apk", "notes"}
+gp = os.path.join(repo, "game.json")
+if os.path.exists(gp):
+    with open(gp, encoding="utf-8") as f:
+        g = json.load(f)
+    assert re.fullmatch(r"\d+\.\d+\.\d+", g["version"]) and g["apk"].endswith("/Frontline-%s.apk" % g["version"]), "game.json"
+    out["game"] = g
 with open(os.path.join(repo, "index.json"), "w", encoding="utf-8") as f:
-    json.dump({"frontline": "mods", "format": 1, "mods": mods}, f, ensure_ascii=False, indent=1)
+    json.dump(out, f, ensure_ascii=False, indent=1)
 print(len(mods), "mods:", ", ".join(m["title"] for m in mods))

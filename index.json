@@ -131,5 +131,10 @@
    "file": "mods/supreme-command.frontline",
    "size": 2273
   }
- ]
+ ],
+ "game": {
+  "version": "3.4.2",
+  "apk": "https://github.com/NucleanYT/Frontline-Mods-/raw/main/android/Frontline-3.4.2.apk",
+  "notes": "Update button for the Android app; Israel and Palestine no longer start as friends; the app knows its own version."
+ }
 }
