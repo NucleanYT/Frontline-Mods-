@@ -158,7 +158,7 @@ game), and numbers are clamped. Leave anything out to keep the game's own value.
 | `vignette` | 0–1 (0.45) | the dark frame around the map |
 | `names`, `namesEdge`, `namesAlpha` | colours, 0.2–1.4 (1) | the big country names on the map |
 | `namesAuto` (3.4.1) | 0 or 1 (0) | 1: names in the `namesEdge` colour, edged with `names`, on light countries |
-| `edgeGlow` (3.4.1) | 0–1.5 (0) | each country's colour strong along its land borders and washed out inside |
+| `edgeGlow` (3.4.1) | 0–2.5 (0) | each country's colour glowing along its borders, the inside see-through; above 1 (3.4.6) the glow gets brighter and wider |
 | `mottle` (3.4.1) | 0–2 (0) | a blotchy satellite-like texture over the land |
 | `landLines`, `seaLines` (3.4.1) | 0–1 (0) | thin province-like lines over the land; sea-zone lines over the water (when zoomed in far enough) |
 | `clouds` (3.4.1) | 0–1 (0) | clouds over the map when zoomed out |
