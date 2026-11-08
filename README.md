@@ -12,6 +12,7 @@ installed with one click. Nobody gets a mod they didn't pick.
 | 1861: The American Civil War | scenario | Fort Sumter; the Taiping Rebellion; Italy newly united |
 | Cold War 1962: The Cuban Missile Crisis | scenario | Soviet missiles in Cuba; a divided Berlin and Vietnam; the Congo Crisis |
 | Cold War 1985 | scenario | NATO against the Warsaw Pact; Afghanistan, Iran–Iraq and Angola at war |
+| The Great Souvlaki War | scenario | a joke map, April 2027: a hugely overpowered Greece invades Turkey, and wins |
 | Empires Reborn | scenario | an alternate 2031: the Ottomans, Byzantium, Austria-Hungary, Persia, the Inca … are back |
 | The Shattered Isles | made-up world | 60 nations on a new planet of ragged continents and islands |
 | Supreme Command | theme (Frontline 3.4.1+) | a WWII grand-strategy look: steel panels and stencil titles; country colours glowing along their borders over mottled terrain, province and sea-zone lines, clouds, a navy sea and star capitals |

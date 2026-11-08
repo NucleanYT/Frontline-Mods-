@@ -81,6 +81,19 @@
    "size": 9614
   },
   {
+   "id": "great-souvlaki-war",
+   "kind": "scenario",
+   "title": "The Great Souvlaki War",
+   "version": "1.0",
+   "author": "Frontline",
+   "tagline": "A joke map: Greece invades Turkey, and Greece wins",
+   "description": "April Fools' Day 2027. Generalissimo Gyros Souvlakis, Supreme Grill Master of the Hellenic Souvlaki Empire, announces that Constantinople was only ever borrowed and sends the army east with a frappé in every canteen. Greece is massively overpowered: this one is meant to be won. Made up and silly; the Generalissimo is not a real person.",
+   "year": 2027,
+   "minGame": "3.3.0",
+   "file": "mods/great-souvlaki-war.frontline",
+   "size": 2060
+  },
+  {
    "id": "empires-reborn",
    "kind": "scenario",
    "title": "Empires Reborn",

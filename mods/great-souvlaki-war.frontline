@@ -1,0 +1,100 @@
+{
+ "frontline": "mod",
+ "format": 1,
+ "id": "great-souvlaki-war",
+ "kind": "scenario",
+ "title": "The Great Souvlaki War",
+ "year": 2027,
+ "date": "2027-04-01",
+ "version": "1.0",
+ "author": "Frontline",
+ "minGame": "3.3.0",
+ "tagline": "A joke map: Greece invades Turkey, and Greece wins",
+ "description": "April Fools' Day 2027. Generalissimo Gyros Souvlakis, Supreme Grill Master of the Hellenic Souvlaki Empire, announces that Constantinople was only ever borrowed and sends the army east with a frappé in every canteen. Greece is massively overpowered: this one is meant to be won. Made up and silly; the Generalissimo is not a real person.",
+ "intro": [
+  "🍢 Generalissimo Gyros Souvlakis: \"This is not an invasion. We are returning a 574-year-overdue library book.\"",
+  "🥙 Army rations upgraded: tzatziki is now officially classed as ammunition.",
+  "☕ The navy agrees to sail, but only after its 11:00 frappé.",
+  "🧆 Cyprus sends halloumi and moral support, from a very safe distance.",
+  "🏛️ Every Greek grandmother has been made a field marshal. Morale is through the roof.",
+  "📜 New city signs ordered: Constantinople, Smyrna, Prusa, Iconium. Printing costs: enormous."
+ ],
+ "states": [
+  {
+   "code": "HSE",
+   "name": "Hellenic Souvlaki Empire",
+   "take": [
+    "GRC"
+   ],
+   "form": "greater-greece",
+   "color": [
+    58,
+    112,
+    196
+   ],
+   "cap": "Athens",
+   "continent": "Europe",
+   "s": [
+    3800,
+    30,
+    520,
+    2600,
+    6500,
+    96,
+    1.8,
+    96,
+    1.8
+   ]
+  }
+ ],
+ "occupied": [
+  {
+   "by": "HSE",
+   "from": "TUR",
+   "poly": [
+    [
+     25.9,
+     42.15
+    ],
+    [
+     27.4,
+     42.15
+    ],
+    [
+     27.4,
+     40.95
+    ],
+    [
+     25.9,
+     40.95
+    ]
+   ]
+  }
+ ],
+ "names": {
+  "Istanbul": "Constantinople",
+  "İzmir": "Smyrna",
+  "Izmir": "Smyrna",
+  "Bursa": "Prusa",
+  "Konya": "Iconium"
+ },
+ "relations": [
+  [
+   "HSE",
+   "TUR",
+   -95
+  ],
+  [
+   "HSE",
+   "CYP",
+   90
+  ]
+ ],
+ "wars": [
+  {
+   "a": "HSE",
+   "b": "TUR",
+   "name": "Great Souvlaki War"
+  }
+ ]
+}
