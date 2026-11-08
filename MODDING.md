@@ -105,7 +105,7 @@ A theme changes colours, fonts, corners, a panel texture and the strategy map's 
 it's installed, and players switch back in Mods → Installed or Settings → Map. In Settings → Mods players can
 change the `map` numbers below for themselves (the mod file stays as it is). Like the rest of a mod it is only
 data: colours are `"#rrggbb"`, fonts and textures are names from the lists below (the font files ship with the
-game), and numbers are clamped. Leave anything out to keep the game's own value. Set `"minGame": "3.4.0"` (or `"3.4.1"` if you use the `geometric` font or the map settings marked 3.4.1).
+game), and numbers are clamped. Leave anything out to keep the game's own value. Set `"minGame": "3.4.0"` (or the version the newest map setting you use is marked with: `geometric` font and 3.4.1 settings need `"3.4.1"`, 3.4.4 settings `"3.4.4"`).
 
 ```json
 {
@@ -162,6 +162,10 @@ game), and numbers are clamped. Leave anything out to keep the game's own value.
 | `mottle` (3.4.1) | 0–2 (0) | a blotchy satellite-like texture over the land |
 | `landLines`, `seaLines` (3.4.1) | 0–1 (0) | thin province-like lines over the land; sea-zone lines over the water (when zoomed in far enough) |
 | `clouds` (3.4.1) | 0–1 (0) | clouds over the map when zoomed out |
+| `smooth` (3.4.4) | 0 or 1 (0) | 1: coasts and borders run smoothly instead of in steps, with thin outlines (graphics map only) |
+| `terrain` (3.4.4) | 0–1.5 (0) | the land under the colours: pale rocky mountains, darker forests, sandy deserts |
+| `cityNames` (3.4.4) | 0–1 (1) | lower: city dots and names only appear when zoomed further in (capital stars always show) |
+| `countries` (3.4.4) | `{ "DEU": "#5a5a55", … }` | fixed colours by country code (today's map uses ISO codes like DEU, FRA; the 1914/1939 start dates use their own, e.g. GER, SOV); up to 600 |
 | `capital`, `capitalEdge`, `capitalPicked`, `capitalSize` (3.4.1) | colours (`#f6d27a`, `#1d2118`, same as `capital`), 0.6–2.2 (1) | the capital stars; the selected country's star; their size |
 
 ## Limits

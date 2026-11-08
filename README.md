@@ -15,7 +15,7 @@ installed with one click. Nobody gets a mod they didn't pick.
 | The Great Souvlaki War | scenario | a joke map, April 2027: a hugely overpowered Greece invades Turkey, and wins |
 | Empires Reborn | scenario | an alternate 2031: the Ottomans, Byzantium, Austria-Hungary, Persia, the Inca … are back |
 | The Shattered Isles | made-up world | 60 nations on a new planet of ragged continents and islands |
-| Supreme Command | theme (Frontline 3.4.1+) | a WWII grand-strategy look: steel panels and stencil titles; country colours glowing along their borders over mottled terrain, province and sea-zone lines, clouds, a navy sea and star capitals |
+| Supreme Command | theme (Frontline 3.4.4+) | a WWII grand-strategy look: steel panels and stencil titles; muted fixed country colours, smooth coasts and borders, terrain in the land, a navy sea and star capitals |
 
 ## Adding a mod
 
