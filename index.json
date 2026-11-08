@@ -133,8 +133,8 @@
   }
  ],
  "game": {
-  "version": "3.4.2",
-  "apk": "https://github.com/NucleanYT/Frontline-Mods-/raw/main/android/Frontline-3.4.2.apk",
-  "notes": "Update button for the Android app; Israel and Palestine no longer start as friends; the app knows its own version."
+  "version": "3.4.3",
+  "apk": "https://github.com/NucleanYT/Frontline-Mods-/raw/main/android/Frontline-3.4.3.apk",
+  "notes": "What's new: release notes for every version, from the main menu or Settings → About. The Windows installer copes with GitHub being slow."
  }
 }
