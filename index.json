@@ -123,18 +123,18 @@
    "id": "supreme-command",
    "kind": "theme",
    "title": "Supreme Command",
-   "version": "1.4",
+   "version": "1.5",
    "author": "Frontline",
    "tagline": "A dark WWII grand-strategy war room",
-   "description": "Charcoal steel panels with square frames and gold trim, condensed capitals and stencil titles, green command buttons, and a WWII grand-strategy map: muted colours that stay the same for about 90 countries, smooth coasts and borders, mountains, forests and deserts in the land, province and sea-zone lines, a dark navy sea, big spread-out names and star capitals.",
-   "minGame": "3.4.6",
+   "description": "Charcoal steel panels with square frames and gold trim, condensed capitals and stencil titles, green command buttons, and a WWII grand-strategy map: muted colours that stay the same for about 90 countries, smooth coasts and borders, country colours glowing along the borders with the land showing through inside (forests, rocky and snowy mountains, deserts), province and sea-zone lines, a dark navy sea, big spread-out names and star capitals.",
+   "minGame": "3.4.7",
    "file": "mods/supreme-command.frontline",
-   "size": 4351
+   "size": 4433
   }
  ],
  "game": {
-  "version": "3.4.6",
-  "apk": "https://github.com/NucleanYT/Frontline-Mods-/raw/main/android/Frontline-3.4.6.apk",
-  "notes": "Supreme Command 1.4: a stronger, brighter and wider glow along the borders."
+  "version": "3.4.7",
+  "apk": "https://github.com/NucleanYT/Frontline-Mods-/raw/main/android/Frontline-3.4.7.apk",
+  "notes": "Supreme Command 1.5: forests, mountains and deserts show through the see-through inside of countries."
  }
 }

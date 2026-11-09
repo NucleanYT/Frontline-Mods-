@@ -163,7 +163,7 @@ game), and numbers are clamped. Leave anything out to keep the game's own value.
 | `landLines`, `seaLines` (3.4.1) | 0–1 (0) | thin province-like lines over the land; sea-zone lines over the water (when zoomed in far enough) |
 | `clouds` (3.4.1) | 0–1 (0) | clouds over the map when zoomed out |
 | `smooth` (3.4.4) | 0 or 1 (0) | 1: coasts and borders run smoothly instead of in steps, with thin outlines (graphics map only) |
-| `terrain` (3.4.4) | 0–1.5 (0) | the land under the colours: pale rocky mountains, darker forests, sandy deserts |
+| `terrain` (3.4.4) | 0–1.5 (0) | the land under the colours: pale rocky mountains, darker forests, sandy deserts; with `edgeGlow` (3.4.7) the see-through inside of countries shows the land in natural colours (forests, rocky and snowy mountains, deserts, grassland) |
 | `cityNames` (3.4.4) | 0–1 (1) | lower: city dots and names only appear when zoomed further in (capital stars always show) |
 | `countries` (3.4.4) | `{ "DEU": "#5a5a55", … }` | fixed colours by country code (today's map uses ISO codes like DEU, FRA; the 1914/1939 start dates use their own, e.g. GER, SOV); up to 600 |
 | `capital`, `capitalEdge`, `capitalPicked`, `capitalSize` (3.4.1) | colours (`#f6d27a`, `#1d2118`, same as `capital`), 0.6–2.2 (1) | the capital stars; the selected country's star; their size |

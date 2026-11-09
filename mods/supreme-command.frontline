@@ -4,11 +4,11 @@
  "id": "supreme-command",
  "kind": "theme",
  "title": "Supreme Command",
- "version": "1.4",
+ "version": "1.5",
  "author": "Frontline",
- "minGame": "3.4.6",
+ "minGame": "3.4.7",
  "tagline": "A dark WWII grand-strategy war room",
- "description": "Charcoal steel panels with square frames and gold trim, condensed capitals and stencil titles, green command buttons, and a WWII grand-strategy map: muted colours that stay the same for about 90 countries, smooth coasts and borders, mountains, forests and deserts in the land, province and sea-zone lines, a dark navy sea, big spread-out names and star capitals.",
+ "description": "Charcoal steel panels with square frames and gold trim, condensed capitals and stencil titles, green command buttons, and a WWII grand-strategy map: muted colours that stay the same for about 90 countries, smooth coasts and borders, country colours glowing along the borders with the land showing through inside (forests, rocky and snowy mountains, deserts), province and sea-zone lines, a dark navy sea, big spread-out names and star capitals.",
  "theme": {
   "colors": {
    "panel": "#1b1e1d",
