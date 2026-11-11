@@ -133,8 +133,8 @@
   }
  ],
  "game": {
-  "version": "3.4.8",
-  "apk": "https://github.com/NucleanYT/Frontline-Mods-/raw/main/android/Frontline-3.4.8.apk",
-  "notes": "Forests and jungles follow the real world instead of rectangles; an Arch Linux package for PC."
+  "version": "3.4.9",
+  "apk": "https://github.com/NucleanYT/Frontline-Mods-/raw/main/android/Frontline-3.4.9.apk",
+  "notes": "Land matters in war: a tiny country with a huge army can't win anymore. Mountains no longer look sunken."
  }
 }
