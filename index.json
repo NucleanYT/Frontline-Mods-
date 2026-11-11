@@ -133,8 +133,8 @@
   }
  ],
  "game": {
-  "version": "3.4.9",
-  "apk": "https://github.com/NucleanYT/Frontline-Mods-/raw/main/android/Frontline-3.4.9.apk",
-  "notes": "Land matters in war: a tiny country with a huge army can't win anymore. Mountains no longer look sunken."
+  "version": "3.5.0",
+  "apk": "https://github.com/NucleanYT/Frontline-Mods-/raw/main/android/Frontline-3.5.0.apk",
+  "notes": "Rename any country with Edit name. Empires can be Automatic, Ask me first or Never, and an AI-named empire that keeps conquering gets a new name."
  }
 }
