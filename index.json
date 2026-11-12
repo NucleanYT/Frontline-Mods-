@@ -133,8 +133,8 @@
   }
  ],
  "game": {
-  "version": "3.5.0",
-  "apk": "https://github.com/NucleanYT/Frontline-Mods-/raw/main/android/Frontline-3.5.0.apk",
-  "notes": "Rename any country with Edit name. Empires can be Automatic, Ask me first or Never, and an AI-named empire that keeps conquering gets a new name."
+  "version": "3.5.1",
+  "apk": "https://github.com/NucleanYT/Frontline-Mods-/raw/main/android/Frontline-3.5.1.apk",
+  "notes": "Alliances you found fight side by side (also in wars already going on), and splitting a country now gives natural borders along rivers and mountains."
  }
 }
