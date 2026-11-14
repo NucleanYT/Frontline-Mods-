@@ -64,6 +64,8 @@ Every country you don't mention stays as it is today.
   - `"iso2": "de"`: a real country's flag
   - `"form": "…"`: a built-in historic flag: `austria-hungary`, `greater-greece`, `balkan-union`, `yugoslavia`, `byzantium`, `ottoman`, `rome`, `german-empire`, `napoleon`, `great-britain`, `bulgarian-empire`, `russian-empire`, `soviet-union`, `hre`, `greater-romania`, `czechoslovakia`, `union-state`, `kalmar`, `benelux`, `iberia`, `baltic`, `uar`, `arabia`, `persia`, `korea`, `gran-colombia`, `central-america`, `kingdom-italy`, `china-1912`, `siam`, `manchukuo`, `yugoslavia-kingdom`, `egypt-kingdom`, `iraq-kingdom`, `south-africa-1928`, `mongol`
   - `"flag": { "pattern": "h3", "colors": ["#111111", "#dd0000", "#ffce00"], "emblem": "circle", "emblemColor": "#ffce00" }`: drawn by the game.
+    Patterns: `plain`, `h2`, `h3`, `v2`, `v3`, `cross`, `nordic`, `saltire`, `triangle`, `diagonal`, `border`, `canton`, `quarters`.
+    Emblems: `none`, `star`, `circle`, `crescent`, `sun`, `crown`, `diamond`, and since 3.5.3 `cross`, `stars3` (three stars), `ring`, `sword`.
     - Patterns: `plain h2 h3 v2 v3 cross nordic saltire triangle diagonal border canton quarters`.
     - Emblems: `none star circle crescent sun crown diamond`.
 - `cap`: the capital's name (or a list of names to try); `capAt: [lon, lat]` places a small capital that isn't on the map.
